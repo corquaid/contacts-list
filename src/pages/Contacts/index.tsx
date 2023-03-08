@@ -12,7 +12,7 @@ export function ContactsPage() {
   const [data, setData] = useState<Contact[]>([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
-  const [searchFilter, setSearchFilter] = useDebouncedSearch(200);
+  const [searchFilter, setSearchFilter] = useDebouncedSearch(300);
   const [selected, setSelected] = useState<number[]>([]);
 
   useEffect(() => {
